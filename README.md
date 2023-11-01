@@ -18,7 +18,7 @@ pnpm dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### Info
-Most of the code in just boilerplate code from Next.js. I have only added code in the app/ folder, the _components, _helpers and _types folders, and in the page.tsx file.
+Most of the code is boilerplate code from Next.js. I have added code in the app-, _components-, _helpers- and _types- folders.
 
 ### How I would have improved the app
 1. Connect the app to a database, or at least use state to store, add and update the data. That way I could make made use of the buttons.
