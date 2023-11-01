@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import data from './sats-data.json'
+import Button from './_components/button'
 
 export default function Home() {
   const [sessions, setSessions] = useState<Session[]>([])
@@ -57,25 +58,21 @@ export default function Home() {
                         .waitingListPosition &&
                       session.bookingInfo.memberBookingInfo
                         .waitingListPosition > 0 ? (
-                        <button className="bg-transparent border border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white font-base py-2 px-4 rounded-lg">
+                        <Button variant="primary" outlined>
                           Unbook
-                        </button>
+                        </Button>
                       ) : (
-                        <button className="bg-transparent border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white font-base py-2 px-4 rounded-lg">
+                        <Button variant="secondary" outlined>
                           Unbook
-                        </button>
+                        </Button>
                       )}
                     </>
                   ) : (
                     <>
                       {session.bookingInfo.waitingListCount > 0 ? (
-                        <button className="bg-indigo-600 text-white hover:bg-indigo-500 font-base py-2 px-4 rounded-lg">
-                          Book
-                        </button>
+                        <Button variant="primary">Join waiting list</Button>
                       ) : (
-                        <button className="bg-blue-900 text-white hover:bg-blue-800 font-base py-2 px-4 rounded-lg">
-                          Book
-                        </button>
+                        <Button variant="primary">Book</Button>
                       )}
                     </>
                   )}
