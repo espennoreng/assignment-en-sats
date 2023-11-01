@@ -1,0 +1,182 @@
+{
+    "results": [
+        {
+          "id": "178p195616",
+          "durationInMinutes": 45,
+          "instructor": "Benedikte Pettersen",
+          "clubName": "SATS Nydalen",
+          "name": "Prformance™ Mobility",
+          "bookingInfo": {
+            "capacity": 16,
+            "bookedCount": 9,
+            "waitingListCount": 0,
+            "memberBookingInfo": {
+              "participationId": "",
+              "bookingState": "NotBooked"
+            }
+          },
+          "followingBookingCount": 0,
+          "followingBookings": [],
+          "zonedStartTime": {
+            "timeZone": "Europe/Oslo",
+            "dateTime": "2023-10-30T15:15:00Z"
+          }
+        },
+        {
+          "id": "178p196194",
+          "durationInMinutes": 30,
+          "instructor": "Martine Bjørnstad",
+          "clubName": "SATS Nydalen",
+          "name": "Cardio Step",
+          "bookingInfo": {
+            "capacity": 32,
+            "bookedCount": 31,
+            "waitingListCount": 0,
+            "memberBookingInfo": {
+              "participationId": "",
+              "bookingState": "NotBooked"
+            }
+          },
+          "followingBookingCount": 0,
+          "followingBookings": [],
+          "zonedStartTime": {
+            "timeZone": "Europe/Oslo",
+            "dateTime": "2023-10-30T15:45:00Z"
+          }
+        },
+        {
+          "id": "178p195457",
+          "durationInMinutes": 55,
+          "instructor": "Benedikte Pettersen",
+          "clubName": "SATS Nydalen",
+          "name": "Prformance™ Strength",
+          "bookingInfo": {
+            "capacity": 15,
+            "bookedCount": 15,
+            "waitingListCount": 7,
+            "memberBookingInfo": {
+              "participationId": "",
+              "bookingState": "NotBooked"
+            }
+          },
+          "followingBookingCount": 0,
+          "followingBookings": [],
+          "participationProbability": "Low",
+          "zonedStartTime": {
+            "timeZone": "Europe/Oslo",
+            "dateTime": "2023-10-30T16:00:00Z"
+          }
+        },
+        {
+          "id": "178p195826",
+          "durationInMinutes": 60,
+          "instructor": "Stig Rakke",
+          "clubName": "SATS Nydalen",
+          "name": "Cycling Interval",
+          "bookingInfo": {
+            "capacity": 32,
+            "bookedCount": 9,
+            "waitingListCount": 0,
+            "memberBookingInfo": {
+              "participationId": "",
+              "bookingState": "NotBooked"
+            }
+          },
+          "followingBookingCount": 0,
+          "followingBookings": [],
+          "zonedStartTime": {
+            "timeZone": "Europe/Oslo",
+            "dateTime": "2023-10-30T16:15:00Z"
+          }
+        },
+        {
+          "id": "178p196394",
+          "durationInMinutes": 30,
+          "instructor": "Martine Bjørnstad",
+          "clubName": "SATS Nydalen",
+          "name": "ABSolution",
+          "bookingInfo": {
+            "capacity": 38,
+            "bookedCount": 29,
+            "waitingListCount": 0,
+            "memberBookingInfo": {
+              "participationId": "",
+              "bookingState": "NotBooked"
+            }
+          },
+          "followingBookingCount": 0,
+          "followingBookings": [],
+          "zonedStartTime": {
+            "timeZone": "Europe/Oslo",
+            "dateTime": "2023-10-30T16:15:00Z"
+          }
+        },
+        {
+            "id": "178p196214",
+            "durationInMinutes": 45,
+            "instructor": "Katja Rugaas",
+            "clubName": "SATS Nydalen",
+            "name": "Yoga for Athletes",
+            "bookingInfo": {
+              "capacity": 38,
+              "bookedCount": 13,
+              "waitingListCount": 0,
+              "memberBookingInfo": {
+                "participationId": "",
+                "bookingState": "Booked",
+                "waitingListPosition": 0
+              }
+            },
+            "followingBookingCount": 0,
+            "followingBookings": [],
+            "zonedStartTime": {
+              "timeZone": "Europe/Oslo",
+              "dateTime": "2023-10-30T17:00:00Z"
+            }
+        },
+        {
+          "id": "178p196234",
+          "durationInMinutes": 60,
+          "instructor": "Erik Aleksander Vogt Lorentzen",
+          "clubName": "SATS Nydalen",
+          "name": "BODYPUMP™",
+          "bookingInfo": {
+            "capacity": 36,
+            "bookedCount": 17,
+            "waitingListCount": 0,
+            "memberBookingInfo": {
+              "participationId": "",
+              "bookingState": "NotBooked"
+            }
+          },
+          "followingBookingCount": 0,
+          "followingBookings": [],
+          "zonedStartTime": {
+            "timeZone": "Europe/Oslo",
+            "dateTime": "2023-10-30T18:00:00Z"
+          }
+        },
+        {
+          "id": "178p196497",
+          "durationInMinutes": 45,
+          "instructor": "Emilie Johnsen Bergstrøm",
+          "clubName": "SATS Nydalen",
+          "name": "Prformance™ Hi-Intensity",
+          "bookingInfo": {
+            "capacity": 18,
+            "bookedCount": 17,
+            "waitingListCount": 0,
+            "memberBookingInfo": {
+              "participationId": "",
+              "bookingState": "NotBooked"
+            }
+          },
+          "followingBookingCount": 0,
+          "followingBookings": [],
+          "zonedStartTime": {
+            "timeZone": "Europe/Oslo",
+            "dateTime": "2023-10-30T18:15:00Z"
+          }
+        }
+    ]
+}
