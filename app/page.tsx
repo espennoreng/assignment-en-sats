@@ -1,7 +1,7 @@
 'use client'
+
 import React, { useState, useEffect } from 'react'
 import data from './sats-data.json'
-import Button from './_components/button'
 import SessionDetails from './_components/session-details'
 import { Session } from './_types/sats-data-types'
 
