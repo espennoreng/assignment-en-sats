@@ -14,6 +14,7 @@ export default function Button({
   return (
     <button
       {...props}
+      onClick={() => alert('Button clicked, but I have no functionality')}
       className={`${
         variant === 'primary'
           ? 'bg-blue-900 text-white hover:bg-blue-800'
