@@ -12,6 +12,9 @@ export default function SessionDetails({
   return (
     <div className="flex flex-col gap-1">
       <div className="flex flex-row gap-4 w-full">
+        {
+          // Left side
+        }
         <div className="flex flex-col gap-1">
           <p className="text-sm md:text-base font-medium text-gray-900">
             {new Date(session.zonedStartTime.dateTime).toLocaleTimeString(
@@ -28,6 +31,9 @@ export default function SessionDetails({
             {session.durationInMinutes} min
           </p>
         </div>
+        {
+          // Middle
+        }
         <div className="flex flex-col gap-1">
           <p className="text-sm md:text-base font-medium text-gray-900">
             {session.name}
@@ -39,10 +45,13 @@ export default function SessionDetails({
             {session.clubName}
           </p>
         </div>
+        {
+          // Right side
+        }
         <div className="flex-grow"></div>
         <div className="flex flex-col justify-end">
           {getUserBookedStatus(session) === 'Booked' ? (
-            <Button variant="primary" outlined>
+            <Button variant="secondary" outlined>
               Unbook
             </Button>
           ) : (
@@ -56,6 +65,9 @@ export default function SessionDetails({
           )}
         </div>
       </div>
+      {
+        // Bottom (TODO: not use hardcode ml values)
+      }
       <div className="flex flex-row gap-4 w-full ml-[54px] md:ml-[61px]">
         {getWaitingList(session) > 0 && (
           <div className="flex flex-col gap-1 justify-end">

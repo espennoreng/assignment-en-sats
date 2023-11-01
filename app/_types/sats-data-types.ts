@@ -5,7 +5,7 @@ export type BookingInfo = {
   memberBookingInfo: {
     participationId: string
     bookingState: string
-    waitingListPosition?: number // Optional since not every entry has it
+    waitingListPosition?: number
   }
 }
 
@@ -17,8 +17,8 @@ export type Session = {
   name: string
   bookingInfo: BookingInfo
   followingBookingCount: number
-  followingBookings: any[] // Assuming it's an array, you can further type this if its structure is known
-  participationProbability?: string // Optional since not every entry has it
+  followingBookings: any[]
+  participationProbability?: string
   zonedStartTime: {
     timeZone: string
     dateTime: string
