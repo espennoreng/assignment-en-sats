@@ -1,3 +1,8 @@
+import {
+  getSpotsLeft,
+  getUserBookedStatus,
+  getWaitingList,
+} from '../_helpers/sats-data-helpers'
 import { Session } from '../_types/sats-data-types'
 import Button from './button'
 
@@ -36,22 +41,13 @@ export default function SessionDetails({
         </div>
         <div className="flex-grow"></div>
         <div className="flex flex-col justify-end">
-          {session.bookingInfo.memberBookingInfo.bookingState === 'Booked' ? (
-            <>
-              {session.bookingInfo.memberBookingInfo.waitingListPosition &&
-              session.bookingInfo.memberBookingInfo.waitingListPosition > 0 ? (
-                <Button variant="primary" outlined>
-                  Unbook
-                </Button>
-              ) : (
-                <Button variant="secondary" outlined>
-                  Unbook
-                </Button>
-              )}
-            </>
+          {getUserBookedStatus(session) === 'Booked' ? (
+            <Button variant="primary" outlined>
+              Unbook
+            </Button>
           ) : (
             <>
-              {session.bookingInfo.waitingListCount > 0 ? (
+              {getWaitingList(session) > 0 ? (
                 <Button variant="primary">Join waiting list</Button>
               ) : (
                 <Button variant="primary">Book</Button>
@@ -61,32 +57,18 @@ export default function SessionDetails({
         </div>
       </div>
       <div className="flex flex-row gap-4 w-full ml-[54px] md:ml-[61px]">
-        {session.bookingInfo.memberBookingInfo.bookingState === 'Booked' &&
-        session.bookingInfo.memberBookingInfo.waitingListPosition &&
-        session.bookingInfo.memberBookingInfo.waitingListPosition > 0 ? (
+        {getWaitingList(session) > 0 && (
           <div className="flex flex-col gap-1 justify-end">
-            <p className="text-xs md:text-sm font-normal text-gray-900">
-              Waiting list position:{' '}
-              {session.bookingInfo.memberBookingInfo.waitingListPosition}
+            <p className="text-xs md:text-sm font-normal text-indigo-600">
+              {getWaitingList(session)} on waiting list
             </p>
           </div>
-        ) : (
-          <>
-            {session.bookingInfo.waitingListCount > 0 && (
-              <div className="flex flex-col gap-1 justify-end">
-                <p className="text-xs md:text-sm font-normal text-indigo-600">
-                  {session.bookingInfo.waitingListCount} on waiting list
-                </p>
-              </div>
-            )}
-          </>
         )}
-        {session.bookingInfo.memberBookingInfo.bookingState === 'NotBooked' &&
-          session.bookingInfo.waitingListCount === 0 && (
+        {getUserBookedStatus(session) === 'NotBooked' &&
+          getWaitingList(session) === 0 && (
             <div className="flex flex-col gap-1 justify-end">
               <p className="text-xs md:text-sm font-normal text-green-600">
-                {session.bookingInfo.capacity - session.bookingInfo.bookedCount}{' '}
-                spots left
+                {getSpotsLeft(session)} spots left
               </p>
             </div>
           )}
