@@ -1,4 +1,4 @@
-type BookingInfo = {
+export type BookingInfo = {
   capacity: number
   bookedCount: number
   waitingListCount: number
@@ -9,7 +9,7 @@ type BookingInfo = {
   }
 }
 
-type Session = {
+export type Session = {
   id: string
   durationInMinutes: number
   instructor: string
@@ -25,6 +25,6 @@ type Session = {
   }
 }
 
-type Data = {
+export type Data = {
   results: Session[]
 }
